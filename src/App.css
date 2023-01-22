@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,800;1,300;1,500;1,700&display=swap');
+
+:root{
+   --primaryAccsent : #ff8a00;
+   --secondaryColor : #fff6e4;
+   --blackColot : #2c2c2c;
+   --grey : #9c9c9c;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: rgb(250,251,252) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.btnIcon{
+  border: none;
+  background-color: transparent;
+}
+
+.circleBadge{
+  width: 6px;
+  height: 6px;
+  background-color: #ff8a00;
+  border-radius: 50%;
+}
+
+.primaryBtn {
+  padding: 12px 24px;
+  gap: 10px;
+  height: 45px;
+  background: var(--primaryAccsent);
+  border: none;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--secondaryColor);
 }
 
-.App-link {
-  color: #61dafb;
+.secondaryBtn{
+  padding: 12px 24px;
+  gap: 10px;
+  height: 45px;
+  background: var(--secondaryColor);
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--primaryAccsent);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.nav-link.active {
+  color: var(--primaryAccsent) !important;
 }
+

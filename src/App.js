@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbars from './componenet/Navbar';
+import 'bootstrap-icons/font/bootstrap-icons.css'
+import { Provider } from './componenet/MyContex';
+import HomePage from './componenet/HomePage';
+import CategoryCard from './componenet/CategoryCard';
+import Banner from './componenet/Banner';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+      <Provider>
+      <Navbars/>
+     
+    <Banner/>
+    <HomePage/>
+    <CategoryCard/>
+      </Provider>
+      </>
     </div>
   );
 }
